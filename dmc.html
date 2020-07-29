@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Devil May Cry: Definitive Edition</title>
+	<style type="text/css">
+		*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #ddd;
+		font-family: 'Roboto Condensed';
+	}
+
+	.nav_tabs{
+		width: 700px;
+		height: 550px;
+		margin: 30px 500px;
+		background-color: #fff;
+		position: relative;
+	}
+
+	.nav_tabs ul{
+		list-style: none;
+	}
+
+	.nav_tabs ul li{
+		float: left;
+	}
+
+	.tab_label{
+		display: block;
+		width: 183px;
+		background-color: #363b48;
+		padding: 25px;
+		font-size: 20px;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+	}
+
+
+	.nav_tabs .rd_tab { 
+	display:none;
+	position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label { 
+	background-color: #e54e43;
+	color:#fff;}
+
+.tab-content{
+	border-top: solid 5px #e54e43;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	height: 320px;
+	width: 700px;
+	left: 0;	
+}
+
+.rd_tab:checked ~ .tab-content{
+	display: block;
+}
+.tab-content h2{
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	color: #87d3b7;
+}
+.tab-content iframe {
+	margin-left: 20px;
+	margin-top: 20px;
+	
+}
+
+.texto_link {
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+.link {
+	text-decoration: none;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.imgmet {
+	width: 660px;
+	margin: 5px 10px;
+}
+
+.imgmypst {
+	width: 650px;
+	height: 300px;
+}
+
+#containere {
+	width: 100%;
+}
+
+#foto {
+	width: 20%;
+	float: left;
+	margin-left: 50px;
+}
+
+.imgjogo {
+	width: 400px;
+}
+
+#foto p {
+	font-size: 30px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+.but {width: 70px; height: 30px; margin: 5px 10px;}
+
+#voltar a {text-decoration: none;}
+</style>
+</head>
+
+
+
+<body>
+	<div id="voltar"><button class="but"><a href="index.html">Voltar</a></button></div>
+	<section id="containere">
+
+		<section id="foto">
+			<div>
+				<img class="imgjogo" src="https://store.playstation.com/store/api/chihiro/00_09_000/container/BR/pt/19/UP0102-CUSA01013_00-DMCDEFINITIVE000/1592240502000/image?w=240&h=240&bg_color=000000&opacity=100&_version=00_09_000">
+				<p>Devil May Cry: Definitive Edition</p>
+			</div>
+		</section>
+
+		<nav class="nav_tabs">
+				<ul>
+					<li>
+						<input type="radio" id="tab1" class="rd_tab" name="tabs" checked>
+						<label for="tab1" class="tab_label">Análise</label>
+						<div class="tab-content">
+							<h2>Vale ou não a pena comprar esse jogo?</h2>
+							<iframe width="660" height="350" src="https://www.youtube.com/embed/YO_q5VeCkD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="tabs" class="rd_tab" id="tab2">
+						<label for="tab2" class="tab_label">Metacritic</label>
+						<div class="tab-content">
+							<h2>Nota recebida pela crítica e jogadores</h2>
+							<img class="imgmet" src="img met/dmc.png">
+							<h4 class="texto_link">Link para a página:</h4><a class="link" href="https://www.metacritic.com/game/playstation-4/dmc-devil-may-cry-definitive-edition">Clique aqui</a>
+							
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="tabs" class="rd_tab" id="tab3">
+						<label for="tab3" class="tab_label">Platina</label>
+						<div class="tab-content">
+							<h2>Platina</h2>
+							<img class="imgmypst" src="mypst/dmc.png">
+							<h4 class="texto_link">Link para a página:</h4><a class="link" href="https://forum.mypst.com.br/index.php?/topic/21580-dmc-devil-may-cry-guia-de-trof%C3%A3%C2%A9us/">Clique aqui</a>
+						</div>
+					</li>
+					
+				</ul>
+			</nav>
+
+	</section>
+</body>
+</html>
